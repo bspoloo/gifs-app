@@ -14,4 +14,7 @@ export class SidebarComponent {
   public getHistoryGif(): string[]{
     return this.gifsService.getTagHistory();
   }
+  public researchByName(history : string): void{
+    this.gifsService.searchTag(history);
+  }
 }

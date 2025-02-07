@@ -1,24 +1,6 @@
 <div class="container-cards">
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
-    <gifs-card></gifs-card>
+  <gifs-card
+    *ngFor="let gif of this.gifs"
+    [gif]="gif"
+  ></gifs-card>
 </div>

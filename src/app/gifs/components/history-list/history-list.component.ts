@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Gif } from '../../interfaces/gifs.interfaces';
 
 @Component({
   selector: 'gifs-history-list',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './history-list.component.css'
 })
 export class HistoryListComponent {
+  @Input()
+  public gifs : Gif[];
 
+  constructor(){
+    this.gifs = [];
+  }
+  
 }
