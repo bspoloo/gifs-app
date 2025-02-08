@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-center">
+  <img class=" card-img-top animate__animated animate__fadeIn" [src]="this.urlImage" [alt]="this.altImage" [ngStyle]="{ display : this.isLoaded ? '' : 'none'}"/>
+
+  <img src="rings.svg" alt="Loading..." width="35" class="mt-3" (load)="this.onLoad()" *ngIf="!this.isLoaded">
+</div>

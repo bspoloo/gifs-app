@@ -1,11 +1,12 @@
 <div class="col p-2">
   <div class="card mb-2 bg-dark text-center" >
 
+    <shared-lasy-image [urlImage]="gif!.images!.downsized_medium!.url" [altImage]="gif!.title"></shared-lasy-image>
     <!-- TODO: crear imagen -->
-    <img [src]="gif?.images?.downsized_medium?.url" [alt]="gif?.title">
+    <!-- <img [src]="gif!.images!.downsized_medium!.url" [alt]="gif!.title"> -->
 
     <div class="card-body text-white">
-      <p class="card-text">{{gif?.title}}</p>
+      <p class="card-text">{{gif!.title}}</p>
     </div>
   </div>
 
