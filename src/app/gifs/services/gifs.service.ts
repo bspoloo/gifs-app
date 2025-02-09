@@ -13,7 +13,7 @@ export class GifsService {
   private _gifs : Gif[] = [];
 
   private API_KEY : string= '0jpgxwyLWrf6Xag2IwsTlYeP9nojK0FG';
-  private URI_GIPHY : string = 'http://api.giphy.com/v1/gifs';
+  private URI_GIPHY : string = 'https://api.giphy.com/v1/gifs';
   private limit : number = 10;
 
   constructor(private http: HttpClient) {
